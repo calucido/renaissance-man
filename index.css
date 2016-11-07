@@ -1,0 +1,53 @@
+.mdl-grid {
+    padding: 0 !important;
+    height: calc(100vh - 64px);
+}
+
+#words {
+    border-right: 1px solid #a8bac3;
+    margin: 0;
+    z-index: 2;
+}
+
+#pretty-pictures {
+    margin: 0;
+    background-color: #f9f9f9;
+    /*z-index:-1;*/
+    /* stealing directly from mdl but tweaking: */
+    width: calc(66.6666666667% + 16px) !important;
+}
+
+#pretty-pictures > img {
+    /*max-height: 100%;*/
+    /*max-width: 100%;*/
+    height:714px;
+    width: 707px;
+    display: block;
+    margin: auto;
+}
+
+.info-cell {
+    border-bottom: 1px solid #dddddd;
+    margin: 0 !important;
+    padding: 15px;
+    overflow: hidden;
+    height: calc(1.5em);
+	transition: max-height 0.5s;
+}
+
+.info-cell-active {
+    height: auto !important;
+}
+
+.info-cell > i {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.info-cell > span.info-cell-title {
+    cursor: pointer;
+}
+
+.info-cell-title {
+    font-size: 2em;
+}

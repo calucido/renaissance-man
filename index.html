@@ -5,11 +5,89 @@
     <title>Renaissance Man</title>
     <meta name="description" content="School Project">
     <meta name="author" content="Calvin Lucido" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue_grey-amber.min.css" />
   </head>
   <body>
+    <div class="mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Renaissance Man</span>
+          <div class="mdl-layout-spacer"></div>
+          <span>Click on anything in the image</span>
+        </div>
+      </header>
+      <div class="mdl-grid">
+        <div id="words" class="mdl-cell mdl-cell--4-col mdl-shadow--4dp">
+          <div id="info-cell-0" class="info-cell">
+            <i class="material-icons" onclick="toggle(0)"cellNumber>add_circle</i>&nbsp;<span class="info-cell-title" onclick="toggle(0)"cellNumber>Arts</span>
+            <br />
+            <br />
+            <span>A Renaissance man is well-versed in the arts: visual, musical, theatrical, and others. Although he may not be good at creating art, or very creative in general, he at least has an appreciation for and knowledge of popular works and techniques. He plays a musical instrument, and at least understands music theory, if not even making a few attempts at composition. He is also acquainted with literature, but more on that later.</span>
+          </div>
+          <div id="info-cell-1" class="info-cell">
+            <i class="material-icons" onclick="toggle(1)"cellNumber>add_circle</i>&nbsp;<span class="info-cell-title" onclick="toggle(1)"cellNumber>Sciences</span>
+            <br />
+            <br />
+            <span>The Renaissance was a time of great scientific exploration and discovery, and a Renaissance man contributes to this, or is at least aware of it. He is familiar with and accepts the newly developed (or re-discovered) scientific method, and keeps up with keeps up with discoveries about the world he lives in. This is less applicable to a modern-day "Renaissance man", because discoveries are becoming more and more obscure as time goes on. A modern Renaissance man, however should still be familiar with the logical thought process behind the scientific method or the modern engineering-design process. He should also be proficient in technology, but more on that later.</span>
+          </div>
+          <div id="info-cell-2" class="info-cell">
+            <i class="material-icons" onclick="toggle(2)"cellNumber>add_circle</i>&nbsp;<span class="info-cell-title" onclick="toggle(2)"cellNumber>Technology</span>
+            <br />
+            <br />
+            <span>Technology was, is, and always will be important; it's what drives the world forward. Whether a 16th century printing press or a 21st century smartphone, a Renaissance man is proficient at using whatever technology is available, relevant to him, and improves his life. He can (to a degree) diagnose common problems and fix them, and he uses technology responsibly. A modern Renaissance man would ideally be able to code in one language and understand the basics of how computers and the internet work.</span>
+          </div>
+          <div id="info-cell-3" class="info-cell">
+            <i class="material-icons" onclick="toggle(3)"cellNumber>add_circle</i>&nbsp;<span class="info-cell-title" onclick="toggle(3)"cellNumber>Literature/Education</span>
+            <br />
+            <br />
+            <span>A Renaissance man (classical or modern) must be well-spoken, well-written, and well-read. He should know of the classics, and have read more than a few of them. He should be able to write beautifully, persuasively, or in whatever style is necessary — prose and poetry. He should be able to analyze literary works and speak in such a way that his audience understands him and doesn't judge him; he also isn't pretentious in using big words and long, complex sentences. As for education, he has studied the liberal arts in school, but has also learned from experiences, travelling around the world or just to the other side of town.</span>
+          </div>
+          <div id="info-cell-4" class="info-cell">
+            <i class="material-icons" onclick="toggle(4)"cellNumber>add_circle</i>&nbsp;<span class="info-cell-title" onclick="toggle(4)"cellNumber>Wealth</span>
+            <br />
+            <br />
+            <span>All of this comes at a cost: a Renaissance man must be well-off in order to have the time, money, and energy to pursue all of this. It used to be that this wealth had to be inherited, but this is changing in modern times as globalization gives more people more opportunities. He dresses well, and is willing to pay more (in both money and time) to get a superior experience.</span>
+          </div>
+          <div id="info-cell-5" class="info-cell">
+            <i class="material-icons" onclick="toggle(5)"cellNumber>add_circle</i>&nbsp;<span class="info-cell-title" onclick="toggle(5)"cellNumber>Athletics</span>
+            <br />
+            <br />
+            <span>A Renaissance man plays a sport or works out — or both — for both the fun of it, and for the health and body that come with it. He realizes that he can't sit around all day, which is especially relevant in the modern world. Due to the world he lives in, a modern Renaissance man does this more for personal gain (looks, health, fun, etc.) than by necessity, as great physical strength isn't really a requirement anymore; machines due all the (literal and metaphorical) heavy lifting for us.</span>
+          </div>
+          <div id="info-cell-6" class="info-cell">
+            <i class="material-icons" onclick="toggle(6)"cellNumber>add_circle</i>&nbsp;<span class="info-cell-title" onclick="toggle(6)"cellNumber>Sources</span>
+            <br />
+            <br />
+            <a href="https://commons.wikimedia.org/wiki/File:Vitruvianischer_Mann.png">Base image from Wikimedia Commons</a> used under the <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">CC-BY-SA 3.0 License</a>.
+            <a href="https://quimicadaleja.blogspot.com/2014/05/elementos-de-laboratorio.html">Test Tube</a>.
+            <a href="https://www.interfacesketch.com/">iPhone</a>.
+            <a href="https://pixabay.com/p-152671/?no_redirect">Book</a>.
+            <a href="http://www.ebay.com/itm/40-Heavy-Rope-GOLD-PIMP-CHAIN-OLD-SCHOOL-RAPPER-RUN-DMC-Costume-Bling-/281929221503">Gold chain (hilariously from eBay)</a>.
+            <a href="http://www.emercedesbenz.com/lifestyle/outdoors/brooks-adrenaline-gts-12-and-ghost-5/attachment/brooks-adrenaline-gts-12-running-shoes-2/">Shoes</a>.
+            <a href="https://github.com/calucido/renaissance-man">Code is here (Github)</a>.
+          </div>
+        </div>
+        <div id="pretty-pictures" class="mdl-cell mdl-cell--8-col">
+          <map name="Map" id="Map">
+            <area alt="" title="" href="#0" onclick="toggle(0)" shape="rect" coords="83,179,116,292" />
+            <area alt="" title="" href="#1" onclick="toggle(1)" shape="rect" coords="85,117,136,177" />
+            <area alt="" title="" href="#2" onclick="toggle(2)" shape="rect" coords="560,112,623,175" />
+            <area alt="" title="" href="#3" onclick="toggle(3)" shape="rect" coords="591,179,680,283" />
+            <area alt="" title="" href="#4" onclick="toggle(4)"shape="rect" coords="309,187,396,292" />
+            <area alt="" title="" href="#5" onclick="toggle(5)" shape="rect" coords="126,588,581,678" />
+          </map>
+          <img src="img/da-vinci-guy.png" usemap="#Map" />
+          <map name="da-vinci-map">
+            <area shape="rect" coords="84,120,142,177" href="#" />
+          </map>
+        </div>
+      </div>
+    </div>
+    
     <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <script defer src="index.js"></script>
   </body>
 </html>
